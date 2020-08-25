@@ -55,14 +55,6 @@ $result = [PSCustomObject]@{
     AccountReference = $aRef;
     AuditDetails = $auditMessage;
     Account = $account;
-
-    ExportData = [PSCustomObject]@{
-        first_name          = $p.Name.NickName;
-        last_name          = $p.Name.FamilyName;
-        primary_email               = $p.Contact.Business.Email
-        job_title          = $p.Custom.PrimaryPositionDesc
-        department_ids      = "$(($account.department_ids -join ','))"
-    }
 };
  
 #send result back
