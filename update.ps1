@@ -1,5 +1,3 @@
-Add-Type -AssemblyName System.Web;
-
 $ServiceURL = "https://<customer>.freshservice.com"
 $ApiKey = "<KEY>"
  
